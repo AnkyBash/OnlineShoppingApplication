@@ -8,7 +8,9 @@
     <h:body>
         <h:form>
 		<p>Welcome #{login.user}</p>
-		<h:commandLink action="#{login.logout}" value="Logout"></h:commandLink>
+		<h:commandLink action="#{login.logout}" value="Logout"></h:commandLink><br />
+                
+                <h:commandButton action ="SearchPage" value="Search Page"/>
 	</h:form>
     </h:body>
 </html>

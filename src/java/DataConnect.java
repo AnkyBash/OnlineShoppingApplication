@@ -15,7 +15,7 @@ public static Connection getConnection()
 {
 		try {
 			Class.forName("org.apache.derby.jdbc.ClientDriver");
-			Connection con = DriverManager.getConnection("jdbc:derby://localhost:1527/OnlineShopDB");
+			Connection con = DriverManager.getConnection("jdbc:derby://localhost:1527/blah");
 			return con;
                     } 
                 catch (Exception ex)
