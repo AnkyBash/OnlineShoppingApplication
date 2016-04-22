@@ -14,18 +14,34 @@
                     <f:facet name="header">Name</f:facet>
                         #{product.description}
                 </h:column>
-            </h:dataTable>
-            <h:dataTable value="#{showProduct.getProductByID()}" 
-                         var="product" border="1" cellpadding="10">
+                
                 <h:column>
                     <f:facet name="header">ID</f:facet>
                         #{product.productId}
                 </h:column>
+                
+                <h:column>
+                    <f:facet name="header">Cost ($)</f:facet>
+                        #{product.purchaseCost}
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">Quantity</f:facet>
+                        #{product.quantityOnHand}
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">Available</f:facet>
+                        #{product.available}
+                </h:column>
             </h:dataTable>
+            
         </h3>
-        <br/><br/>
+    
+        <br/>
+        
         <h:form>
-            <h:commandButton action="index" value="Back to Start"/>
+            <h:commandButton action="SearchPage" value="Back to Start"/>
         </h:form>
 </html>
 

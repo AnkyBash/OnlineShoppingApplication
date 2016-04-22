@@ -68,6 +68,16 @@ public class showProduct {
         return query.getResultList();
     }
     
+   
+    public List<Product> getAllProducts() {
+
+        // create named query and set parameter
+        Query query = em.createNamedQuery("Product.findAll");
+        // return query result
+        return query.getResultList();
+    }
+    
+    
     public void persist(Object object) {
         try {
             utx.begin();

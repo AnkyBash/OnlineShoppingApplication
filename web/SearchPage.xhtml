@@ -6,17 +6,29 @@
         <title>Facelet Title</title>
     </h:head>
        <h:body>
-        <h1>Demonstrate Search Page Queries</h1>
+        <h1>Search for products here</h1>
         <h:form>
             <h:panelGrid columns="2">
                 Enter Product Name: 
                 <h:inputText value="#{showProduct.productName}"/>
                 <br/>
-                <h:commandButton action="productNameResult" value="Show by Name"/>
+                <h:commandButton action="productNameResult" value="Show by product name"/>
                 Enter Product ID: 
                 <h:inputText value="#{showProduct.productId}"/>
                 <br/>
-                <h:commandButton action="productNameResult" value="Show by City"/>
+                <h:commandButton action="productIdResult" value="Show by product ID"/>
+                               
+                <br/>
+                See all products 
+                <br/>
+                <h:commandButton action="productAllResult" value="Show all products"/>
+                
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <h:commandButton action="admin" value="Back"/>
+                
             </h:panelGrid>
         </h:form>
     </h:body>

@@ -8,9 +8,24 @@
     <h:body>
         <h:form>
 		<p>Welcome #{login.user}</p>
-		<h:commandLink action="#{login.logout}" value="Logout"></h:commandLink><br />
                 
-                <h:commandButton action ="SearchPage" value="Search Page"/>
+               
+                
+                <br></br>
+                <br></br>
+                
+                <h:commandButton action ="SearchPage" value="Search Products"/>
+                
+                <br></br>
+                <br></br>
+                
+                <h:commandButton action="srchCstmrPage" value="Search customers"/>
+                
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+		<h:commandLink action="#{login.logout}" value="Logout"></h:commandLink>
 	</h:form>
     </h:body>
 </html>
