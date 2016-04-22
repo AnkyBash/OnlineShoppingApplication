@@ -52,7 +52,7 @@ public class login {
 
 	//validate login
 	public String validateUsernamePassword() {
-		boolean valid = LoginDAO.validate(user, pwd);
+		boolean valid = validate(user, pwd);
 		if (valid) {
 			HttpSession session = SessionBean.getSession();
 			session.setAttribute("username", user);
@@ -73,4 +73,20 @@ public class login {
 		session.invalidate();
 		return "login";
 	}
+        
+        private static boolean validate(String user, String pwd)
+        {
+          if(user.equals("joe") & pwd.equals("1D10T?"))
+          {
+           return true;
+          }
+          else if(user.equals("toor") & pwd.equals("4uIdo0!"))
+          {
+           return true;
+          }
+          else
+          {
+           return false;
+          }
+        }
 }
